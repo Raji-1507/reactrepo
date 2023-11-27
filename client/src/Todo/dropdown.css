@@ -1,0 +1,71 @@
+/* Dropdown.css */
+
+/* Dropdown container */
+.dropdown {
+  position: relative;
+  width: 200px;
+  color: #fff; /* Text color */
+}
+
+/* Dropdown header */
+.dropdown-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border: 1px solid #fff; /* Border color */
+  cursor: pointer;
+  background-color: #333; /* Header background color */
+}
+
+/* Selected option */
+.selected-option {
+  /* Adjust font styles, colors, etc., for the selected option display */
+}
+
+/* Arrow icon */
+.arrow-icon {
+  font-size: 12px;
+  /* Styles for the arrow icon */
+}
+
+/* Dropdown options */
+.dropdown-options {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  max-height: 200px;
+  overflow-y: auto;
+  border: 1px solid #fff; /* Border color */
+  background-color: #444; /* Background color */
+  z-index: 1000;
+  display: none; /* Initially hide the options */
+}
+.dropdown-options-container {
+  position: absolute;
+  top: calc(100% + 5px);
+  left: 0;
+  width: 100%;
+  max-height: 50px; /* Set a maximum height for the options container */
+  overflow-y: auto; /* Enable vertical scrolling */
+}
+
+/* Show dropdown options when the dropdown is open */
+.dropdown.show-show{
+  display: block;
+  background-color: #fff;
+  color: #444;
+}
+
+/* Individual option items */
+.dropdown-option {
+  padding: 8px;
+  cursor: pointer;
+}
+
+/* Hover styles for options */
+.dropdown-option:hover {
+  background-color: #666; /* Hover background color */
+  /* Adjust hover styles for visibility */
+}
